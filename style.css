@@ -1,0 +1,200 @@
+/*-------GENERAL------------*/
+
+body {
+  width: 50%;
+  margin: auto;
+  font-family: sans-serif;
+  background: url("https://images.unsplash.com/photo-1574181047542-c76d090d6181?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1374&q=80")
+    center/cover;
+  color: #293241;
+}
+
+nav,
+header,
+p {
+  text-align: center;
+}
+
+/*Styling Section Headers*/
+h3 {
+  background-color: #98c1d9;
+  text-align: center;
+  font-size: 1.7em;
+  color: #293241;
+  padding: 1em;
+}
+
+
+/*Styling Website Text*/
+p {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  padding: 1em;
+  line-height: 1.5;
+  text-indent: 1em;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
+
+/*-------NAVIGATION BAR------------*/
+
+nav {
+  margin: auto;
+  background-color: #3d5a80;
+}
+
+nav > a {
+  display: inline-block;
+  margin: 1em;
+  color: #ee6c4d;
+  font-weight: bold;
+}
+
+/*-------HEADER SECTION------------*/
+
+header {
+  color: #293241;
+  padding: 1em;
+  background-color: #98c1d9;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-weight: 510;
+  font-size: 1.2em;
+}
+
+/*-------ABOUT ME SECTION------------*/
+
+#About-Me {
+  display: inline-flex;
+}
+
+#About-Me img {
+  padding: 2em;
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 200px;
+  max-height: 200px;
+  width: 40%;
+  height: 40%;
+}
+
+/*-------WRITING +PROF EXP GENERAL------------*/
+
+#Writing a,
+#ProfExp a {
+  color: #293241;
+}
+
+#Writing a:hover,
+#ProfExp a:hover {
+  color: #ee6c4d;
+  text-decoration: none;
+}
+
+/*-------WRITING SECTION------------*/
+
+.list-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.list-wrapper li {
+  margin-bottom: 10px;
+}
+
+.searchBox {
+  /*Aesthetics*/
+  background-color: #98c1d9;
+  border: solid thin;
+  border-color: #3d5a80;
+
+  /*Size, Alignment, Margins*/
+  width: 40%;
+  padding: 0.5em;
+  margin: auto;
+  margin-left: 5%;
+  display: inline-block;
+
+  /*Text Within Box*/
+  font-size: 1.2em;
+  color: #293241;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.searchBox a {
+  font-size: smaller;
+}
+
+.searchBox button {
+  background-color: #e0fbfc;
+  border: none;
+  color: #293241;
+  margin-bottom: 1em;
+}
+
+.searchBox button:hover {
+  background-color: #ee6c4d;
+}
+
+.searchBox input {
+  background-color: aliceblue;
+  width: 90%;
+  max-width: 10em;
+}
+
+/*-----PROF EXP SECTION-------*/
+#ProfExp h3 {
+  margin-top: 2.5em;
+}
+
+/*-------FOOTER SECTION------------*/
+
+footer {
+  background-color: #3d5a80;
+}
+
+footer p {
+  color: #e0fbfc;
+  padding: 0.3em;
+}
+
+
+/*-------MODIFICATIONS FOR MOBILE SCREENS------------*/
+
+
+
+@media only screen and (max-width: 940px) {
+ 
+  body{
+    width:90%;
+  }
+
+  #About-Me {
+    display: block;
+  }
+
+  #About-Me img {
+    display: block;
+    margin: auto;
+    width:100%;
+    height: auto;
+    padding:0, 1em;
+  }
+
+  .searchBox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 1em;
+  }
+}
+
